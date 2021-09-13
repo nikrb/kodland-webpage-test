@@ -1,12 +1,19 @@
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
-.main {
+/* glitch boilerplate */
+.wrapper {
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* specifics */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,17 +22,18 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-item: flex-start;
+  justify-content: flex-start;
   margin: 1rem;
-  padding: .5rem;
-  max-width: 200px;
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
+  max-width: 250px;
+  border: 1px solid #e7e7e7;
 }
 
-.item_image {
-  background-image: url('https://cdn.glitch.com/e992dc91-ca9d-4d51-b592-b5e114acbf9d%2Fboots.png?v=1622986705649');
+.item_info {
+  padding: 0 1rem;
 }
-
 .item_name {
   font-family: Roboto, sans-serif;
   font-size: 20px;
